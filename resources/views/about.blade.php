@@ -294,9 +294,6 @@
 												<li>
 													<a href="gallery.html">gallery</a>
 												</li>
-												<li>
-													<a href="speaker.html">speaker</a>
-												</li>
 												<li class="menu-item-has-children">
 													<a href="#!">contact</a>
 												</li>
@@ -510,7 +507,7 @@
 					<div class="col-lg-4 col-md-12 col-sm-12">
 						<div class="section-title text-left mb-50 sr-fade1">
 							<small class="sub-title">we are Lingkaran Kreatif</small>
-							<h2 class="big-title"><strong>No.1</strong> Events Management</h2>
+							<h2 class="big-title"><strong>No.1</strong> Events Organizer</h2>
 							<a href="#!" class="custom-btn">
 								get started!
 							</a>
@@ -1331,67 +1328,15 @@
 
 		<!-- default-footer-section - start
 		================================================== -->
-		<footer id="footer-section" class="footer-section default-footer-section clearfix">
+		<footer id="footer-section" class="footer-section footer-section2 clearfix">
 
 			<!-- footer-top - start -->
 			<div class="footer-top sec-ptb-100 clearfix">
 				<div class="container">
 					<div class="row">
 
-						<!-- basic-info - start -->
-						<div class="col-lg-12 col-md-12 col-md-12">
-							<div class="basic-info mb-50 clearfix">
-								<div class="row">
-
-									<!-- basic-info-item - start -->
-									<div class="col-lg-4 col-md-6 col-sm-12">
-										<div class="basic-info-item">
-											<span class="icon">
-												<i class="fas fa-map-marker-alt"></i>
-											</span>
-											<div class="info-content">
-												<p>100 highland ave,</p>
-												<h3>california, united state</h3>
-											</div>
-										</div>
-									</div>
-									<!-- basic-info-item - end -->
-
-									<!-- basic-info-item - start -->
-									<div class="col-lg-4 col-md-6 col-sm-12">
-										<div class="basic-info-item">
-											<span class="icon">
-												<i class="fas fa-envelope"></i>
-											</span>
-											<div class="info-content">
-												<p><a href="#!">contact@pantero.com</a></p>
-												<h3><a href="#!">info@harmoni.com</a></h3>
-											</div>
-										</div>
-									</div>
-									<!-- basic-info-item - end -->
-
-									<!-- basic-info-item - start -->
-									<div class="col-lg-4 col-md-6 col-sm-12">
-										<div class="basic-info-item">
-											<span class="icon">
-												<i class="fas fa-phone"></i>
-											</span>
-											<div class="info-content">
-												<p><a href="#!">100 800 1234 5555</a></p>
-												<h3><a href="#!">100 800 1234 5555</a></h3>
-											</div>
-										</div>
-									</div>
-									<!-- basic-info-item - end -->
-									
-								</div>
-							</div>
-						</div>
-						<!-- basic-info - end -->
-
 						<!-- about-wrapper - start -->
-						<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="col-lg-4 col-md-6 col-sm-12">
 							<div class="about-wrapper">
 
 								<!-- site-logo-wrapper - start -->
@@ -1444,29 +1389,10 @@
 						<!-- about-wrapper - end -->
 
 						<!-- usefullinks-wrapper - start -->
-						<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="col-lg-4 col-md-6 col-sm-12">
 							<div class="usefullinks-wrapper ul-li-block">
 								{{-- <h3 class="footer-item-title">
 									useful <strong>links</strong>
-								</h3>
-								<ul>
-									<li><a href="#!">Birthday Party</a></li>
-									<li><a href="#!">Business meeting</a></li>
-									<li><a href="#!">Conference</a></li>
-									<li><a href="#!">Food Event</a></li>
-									<li><a href="#!">Musical Event</a></li>
-									<li><a href="#!">Wedding Party</a></li>
-								</ul> --}}
-								
-							</div>
-						</div>
-						<!-- usefullinks-wrapper - end -->
-
-						<!-- usefullinks-wrapper - start -->
-						<div class="col-lg-3 col-md-6 col-sm-12">
-							<div class="usefullinks-wrapper ul-li-block">
-								{{-- <h3 class="footer-item-title">
-									Lingkaran Kreatif <strong>instagram</strong>
 								</h3>
 								<ul>
 									<li><a href="#!">About Harmoni</a></li>
@@ -1475,25 +1401,60 @@
 									<li><a href="#!">Events Schedule</a></li>
 									<li><a href="#!">Sponsors</a></li>
 									<li><a href="#!">Venues</a></li>
+									<li><a href="#!">Tickets</a></li>
+									<li><a href="#!">Pricing Plans</a></li>
 								</ul> --}}
-								
 							</div>
 						</div>
 						<!-- usefullinks-wrapper - end -->
 
 						<!-- instagram-wrapper - start -->
-						<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="col-lg-4 col-md-6 col-sm-12">
 							<div class="instagram-wrapper ul-li">
 								<h3 class="footer-item-title">
 									Lingkaran Kreatif <strong>instagram</strong>
 								</h3>
 								<ul>
+									{{-- @foreach (Ghost::welcome() as $item)
+									<div class="item @if($loop->first) active @endif" style="background-image: url({{ asset('/fotoslider/' .$item->foto ?? '') }});">
+										<div class="overlay-black">
+											<div class="container">
+												<div class="slider-item-content">
+
+													<span class="medium-text">one stop</span>
+													<h1 class="big-text">Event Planner</h1>
+													<small class="small-text">every event sould be perfect</small>
+												</div>
+											</div>
+										</div>
+									</div>
+									@endforeach --}}
 									@foreach (Ghost::instagram() as $item)
 									<li class="image-wrapper">
 										<img src="{{ asset('/fotoinstagram/' .$item->foto ?? '') }}" alt="Image_not_found">
 										<a href="https://www.instagram.com/lingkarankreatifcc/"><i class="fab fa-instagram"></i></a>
 									</li>
 									@endforeach
+									{{-- <li class="image-wrapper">
+										<img src="assets/images/footer/instagram/003.jpg" alt="Image_not_found">
+										<a href="#!"><i class="fab fa-instagram"></i></a>
+									</li>
+									<li class="image-wrapper">
+										<img src="assets/images/footer/instagram/004.jpg" alt="Image_not_found">
+										<a href="#!"><i class="fab fa-instagram"></i></a>
+									</li>
+									<li class="image-wrapper">
+										<img src="assets/images/footer/instagram/005.jpg" alt="Image_not_found">
+										<a href="#!"><i class="fab fa-instagram"></i></a>
+									</li>
+									<li class="image-wrapper">
+										<img src="assets/images/footer/instagram/006.jpg" alt="Image_not_found">
+										<a href="#!"><i class="fab fa-instagram"></i></a>
+									</li>
+									<li class="image-wrapper">
+										<img src="assets/images/footer/instagram/009.jpg" alt="Image_not_found">
+										<a href="#!"><i class="fab fa-instagram"></i></a>
+									</li> --}}
 								</ul>
 								<h4 class="followus-link">
 									Follow Our Instagram <a href="https://www.instagram.com/lingkarankreatifcc/" target="_blank">@lingkarankreatifcc</a>
@@ -1518,6 +1479,20 @@
 							</div>
 						</div>
 						<!-- copyright-text - end -->
+
+						<!-- footer-menu - start -->
+						{{-- <div class="col-lg-5 col-md-12 col-sm-12">
+							<div class="footer-menu">
+								<ul>
+									<li><a href="contact.html">Contact us</a></li>
+									<li><a href="about.html">About us</a></li>
+									<li><a href="#!">Site map</a></li>
+									<li><a href="#!">Privacy policy</a></li>
+								</ul>
+							</div>
+						</div> --}}
+						<!-- footer-menu - end -->
+
 					</div>
 				</div>
 			</div>
