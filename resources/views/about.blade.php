@@ -283,7 +283,7 @@
 
 									<!-- menu-item-list - start -->
 									<div class="col-lg-10">
-										<div class="menu-item-list ul-li clearfix">
+										<div class="menu-item-list ul-li clearfix mt-2">
 											<ul>
 												<li class="menu-item-has-children">
 													<a href="{{ url('/') }}">home</a>
@@ -292,10 +292,10 @@
 													<a href="{{ url('/about') }}">about</a>
 												</li>
 												<li>
-													<a href="gallery.html">gallery</a>
+													<a href="{{ url('/galeri') }}">gallery</a>
 												</li>
 												<li class="menu-item-has-children">
-													<a href="#!">contact</a>
+													<a href="{{ url('/contact') }}">contact</a>
 												</li>
 											</ul>
 										</div>
@@ -407,13 +407,13 @@
 								</a>
 							</li>
 							<li>
-								<a href="index-4.html">
+								<a href="{{ url('/galeri') }}">
 									<span class="icon"><i class="fas fa-id-card-alt"></i></span>
 									Gallery
 								</a>
 							</li>
 							<li>
-								<a href="index-4.html">
+								<a href="{{ url('/contact') }}">
 									<span class="icon"><i class="fas fa-address-book"></i></span>
 									Contact
 								</a>
@@ -471,7 +471,7 @@
 								<!-- breadcrumb-title - start -->
 								<div class="breadcrumb-title text-center mb-50">
 									<span class="sub-title">all you need to know</span>
-									<h2 class="big-title"><strong>about</strong> harmoni</h2>
+									<h2 class="big-title"><strong>about</strong> <br>lingkaran Kreatif</h2>
 								</div>
 								<!-- breadcrumb-title - end -->
 
@@ -508,9 +508,9 @@
 						<div class="section-title text-left mb-50 sr-fade1">
 							<small class="sub-title">we are Lingkaran Kreatif</small>
 							<h2 class="big-title"><strong>No.1</strong> Events Organizer</h2>
-							<a href="#!" class="custom-btn">
+							{{-- <a href="#!" class="custom-btn">
 								get started!
-							</a>
+							</a> --}}
 						</div>
 					</div>
 					<!-- section-title - end -->

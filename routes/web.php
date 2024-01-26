@@ -19,6 +19,12 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+Route::get('/galeri', function () {
+    return view('galeri');
+});
+Route::get('/contact', function () {
+    return view('contact');
+});
 
 Auth::routes(['register' => false]);
 

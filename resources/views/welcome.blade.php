@@ -221,7 +221,7 @@
 
 									<!-- menu-item-list - start -->
 									<div class="col-lg-10">
-										<div class="menu-item-list ul-li clearfix">
+										<div class="menu-item-list ul-li clearfix mt-2">
 											<ul>
 												<li class="menu-item-has-children">
 													<a href="/">home</a>
@@ -230,10 +230,10 @@
 													<a href="{{ url('/about') }}">about</a>
 												</li>
 												<li>
-													<a href="gallery.html">gallery</a>
+													<a href="{{ url('/galeri') }}">gallery</a>
 												</li>
 												<li class="menu-item-has-children">
-													<a href="#!">contact</a>
+													<a href="{{ url('/contact') }}">contact</a>
 												</li>
 											</ul>
 										</div>
@@ -310,13 +310,13 @@
 								</a>
 							</li>
 							<li>
-								<a href="index-4.html">
+								<a href="{{ url('/galeri') }}">
 									<span class="icon"><i class="fas fa-id-card-alt"></i></span>
 									Gallery
 								</a>
 							</li>
 							<li>
-								<a href="index-4.html">
+								<a href="{{ url('/contact') }}">
 									<span class="icon"><i class="fas fa-address-book"></i></span>
 									Contact
 								</a>
