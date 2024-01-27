@@ -346,7 +346,7 @@
 								<a href="https://www.instagram.com/lingkarankreatifcc/" target="_blank"><i class="fab fa-instagram"></i></a>
 							</li>
 						</ul>
-						<a href="contact.html" class="contact-btn">contact us</a>
+						<a href="{{ url('/contact') }}" class="contact-btn">contact us</a>
 					</div>
 					<!-- social-links - end -->
 
@@ -980,26 +980,16 @@
 
 		<!-- google map - start
 		================================================== -->
-		<section id="map-section" class="map-section clearfix">
-			{{-- <div class="address-wrapper">
-
-				<!-- address-info-topbar - start -->
-				<div class="address-info-topbar mb-30 clearfix">
-					<div class="address-info-left">
-						<h3 class="title-text">Lingkaran Kreatif</h3>
-						<p class="m-0">
-							Jalan Dr H Teuku Mohammad Hasan Desa No.10A, Sukadamai,
-							Lueng Bata, Banda Aceh City, Aceh 23245
-						</p>
-					</div>
-				</div>
-				<!-- address-info-topbar - end -->
-					
-			</div> --}}
+		{{-- <section id="map-section" class="map-section clearfix">
 			<div id="google-map">
 				<div id="googleMaps" class="google-map-container mt-2">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.1655701641157!2d95.32740767368401!3d5.542450833788496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30403742bec1804b%3A0x101f6d81088dea7a!2sBreak%20Time!5e0!3m2!1sid!2sid!4v1704810630066!5m2!1sid!2sid" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
+			</div>
+		</section> --}}
+		<section id="map-section" class="map-section clearfix">
+			<div id="google-map">
+				<div id="googleMaps" class="google-map-container"></div>
 			</div>
 		</section>
 		<!-- google map - end
@@ -1199,8 +1189,8 @@
 		<script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
 
 		<!-- map jquery include -->
-		{{-- <script src="{{ asset('assets/js/gmap3.min.js') }}"></script> --}}
-		{{-- <script src="http://maps.google.com/maps/api/js?key=AIzaSyC61_QVqt9LAhwFdlQmsNwi5aUJy9B2SyA"></script> --}}
+		<script src="{{ asset('assets/js/gmap3.min.js') }}"></script>
+		<script src="http://maps.google.com/maps/api/js?key=AIzaSyC61_QVqt9LAhwFdlQmsNwi5aUJy9B2SyA"></script>
 
 		<!-- calendar jquery include -->
 		<script src="{{ asset('assets/js/atc.min.js') }}"></script>

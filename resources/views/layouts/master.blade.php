@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Lingkaran Kreatif - Dashboard</title>
+	<title>Lingkaran Kreatif</title>
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
@@ -92,8 +92,7 @@
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-right">
-						<a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
-						<a href="#" class="dropdown-item"><i class="icon-user-plus"></i> Change Password</a>
+						<a href="{{ route('changepassword') }}" class="dropdown-item"><i class="icon-lock2"></i> Change Password</a>
 						<a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();"><i class="icon-switch2"></i>
 							{{ __('Logout') }}
@@ -144,7 +143,7 @@
 							</div>
 
 							<div class="ml-3 align-self-center">
-								<a href="#" class="text-white"><i class="icon-cog3 spinner"></i></a>
+								<a href="{{ route('changepassword') }}" class="text-white"><i class="icon-cog3 spinner"></i></a>
 							</div>
 						</div>
 					</div>
@@ -169,23 +168,33 @@
 								</span>
 							</a>
 						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Component</span></a>
-
-							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
-								<li class="nav-item"><a href="{{ route('slider') }}"
-										class="nav-link">Slider</a>
-								</li>
-                                <li class="nav-item"><a href="{{ route('instagram') }}"
-									class="nav-link">Foto Instagram</a>
-								</li>
-								<li class="nav-item"><a href="{{ route('sponsors') }}"
-										class="nav-link">Sponsors</a>
-								</li>
-								<li class="nav-item"><a href="{{ route('gallery') }}"
-										class="nav-link">Gallery</a>
-								</li>
-							</ul>
+						<li class="nav-item-header">
+							<div class="text-uppercase font-size-xs line-height-xs">Content</div> <i class="icon-menu"
+								title="Main"></i>
+						</li>
+						<li class="nav-item">
+							<a href="{{ route('slider') }}" class="nav-link {{ request()->route()->uri() == 'slider' ? 'active' : '' }}">
+								<i class="icon-images3"></i>
+								<span>
+									Carousel
+								</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="{{ route('gallery') }}" class="nav-link {{ request()->route()->uri() == 'gallery' ? 'active' : '' }}">
+								<i class="icon-gallery"></i>
+								<span>
+									Gallery
+								</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="{{ route('instagram') }}" class="nav-link {{ request()->route()->uri() == 'instagram' ? 'active' : '' }}">
+								<i class="icon-instagram"></i>
+								<span>
+									Feed Intagram
+								</span>
+							</a>
 						</li>
 					</ul>
 				</div>

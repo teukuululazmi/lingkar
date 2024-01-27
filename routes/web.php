@@ -46,3 +46,8 @@ Route::get('/sponsorsDelete/{id}', [App\Http\Controllers\Sponsors\SponsorsContro
 
 //gallery
 Route::get('/gallery', [App\Http\Controllers\Gallery\GalleryController::class, 'index'])->name('gallery')->middleware('auth');
+
+
+//changepassword
+Route::get('/changepassword', [App\Http\Controllers\ChangePassword\ChangePasswordController::class, 'index'])->name('changepassword')->middleware('auth');
+Route::post('/changepasswordPost', [App\Http\Controllers\ChangePassword\ChangePasswordController::class, 'changepasswordPost'])->name('changepasswordPost')->middleware('auth');

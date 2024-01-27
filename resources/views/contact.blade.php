@@ -7,34 +7,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 
-		<title>Harmoni - Contact Us</title>
-		<link rel="shortcut icon" href="assets/images/favicon.png">
+		<title>Lingkaran Kreatif - Contact Us</title>
+		<link rel="shortcut icon" href="{{ asset('assets/images/LOGO_.png') }}">
 
 		<!-- fraimwork - css include -->
-		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css') }}">
 
 		<!-- icon css include -->
-		<link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/flaticon.css">
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/fontawesome-all.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/flaticon.css') }}">
 
 		<!-- carousel css include -->
-		<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/slick.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/slick-theme.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/animate.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/owl.theme.default.min.css') }}">
 
 		<!-- others css include -->
-		<link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/calendar.css">
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/magnific-popup.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/jquery.mCustomScrollbar.min.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/calendar.css') }}">
 
 		<!-- color switcher css include -->
-		<link rel="stylesheet" type="text/css" href="assets/css/colors/style-switcher.css">
-		<link id="color_theme" rel="stylesheet" type="text/css" href="assets/css/colors/default.css">
+		{{-- <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/colors/style-switcher.css') }}"> --}}
+		{{-- <link id="color_theme" rel="stylesheet" type="text/css" href="{{ asset('assets/css/colors/default.css') }}"> --}}
 
 		<!-- custom css include -->
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
 		
 
 	</head>
@@ -66,200 +66,6 @@
 		================================================== -->
 		<header id="header-section" class="header-section default-header-section auto-hide-header clearfix">
 
-			<!-- header-top - start -->
-			<div class="header-top">
-				<div class="container">
-					<div class="row">
-
-						<!-- basic-contact - start -->
-						<div class="col-lg-6">
-							<div class="basic-contact">
-								<ul>
-									<li>
-										<a href="#!">
-											<i class="fas fa-envelope"></i>
-											info@harmoni.com
-										</a>
-									</li>
-									<li>
-										<a href="#!">
-											<i class="fas fa-phone"></i>
-											100-2222-9999
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<!-- basic-contact - end -->
-
-						<!-- register-login-group - start -->
-						<div class="col-lg-6">
-							<div class="register-login-group">
-								<ul>
-									<li>
-										<a href="#register-modal" class="register-modal-btn">
-											<i class="fas fa-user"></i>
-											Register
-										</a>
-										<div id="register-modal" class="reglog-modal-wrapper register-modal mfp-hide clearfix" style="background-image: url(assets/images/login-modal-bg.jpg);">
-											<div class="overlay-black clearfix">
-
-												<!-- leftside-content - start -->
-												<div class="leftside-content">
-													<div class="site-logo-wrapper mb-80">
-														<a href="#!" class="logo">
-															<img src="assets/images/2.site-logo.png" alt="logo_not_found">
-														</a>
-													</div>
-													<div class="register-login-link mb-80">
-														<ul>
-															<li><a href="#!">Login</a></li>
-															<li class="active"><a href="#!">Register</a></li>
-														</ul>
-													</div>
-													<div class="copyright-text">
-														<p class="m-0">©2018 <a href="#!" class="yellow-color">Harmoni.com</a> all right reserved, made with <i class="fas fa-heart"></i> by jThemes Studio </p>
-													</div>
-												</div>
-												<!-- leftside-content - end -->
-
-												<!-- rightside-content - start -->
-												<div class="rightside-content text-center">
-
-													<div class="mb-30">
-														<h2 class="form-title title-large white-color">Account <strong>Register</strong></h2>
-														<span class="form-subtitle white-color">Have an account? <strong>LOGIN NOW</strong></span>
-													</div>
-
-													<div class="login-form text-center mb-50">
-														<form action="#!">
-															<div class="form-item">
-																<input type="email" placeholder="User Name">
-															</div>
-															<div class="form-item">
-																<input type="password" placeholder="Password">
-															</div>
-															<div class="form-item">
-																<input type="email" placeholder="Repeat Password">
-															</div>
-															<div class="form-item">
-																<input type="password" placeholder="Email Address">
-															</div>
-															<div class="human-verification text-left">
-																<input type="checkbox" id="imnotarobot">
-																<label for="imnotarobot">I'm not a robot</label>
-																<span class="verification-image">
-																	<img src="assets/images/iamnotrobot.png" alt="Image_not_found">
-																</span>
-															</div>
-															<button type="submit" class="login-btn">login now</button>
-														</form>
-													</div>
-
-													<div class="bottom-text white-color">
-														<p class="m-0">
-															* Denotes mandatory field.
-														</p>
-														<p class="m-0">** At least one telephone number is required.</p>
-													</div>
-
-												</div>
-												<!-- rightside-content - end -->
-
-												<a class="popup-modal-dismiss" href="#!">
-													<i class="fas fa-times"></i>
-												</a>
-
-											</div>
-										</div>
-									</li>
-									<li>
-										<a href="#login-modal" class="login-modal-btn">
-											<i class="fas fa-lock"></i>
-											Login
-										</a>
-										<div id="login-modal" class="reglog-modal-wrapper mfp-hide clearfix" style="background-image: url(assets/images/login-modal-bg.jpg);">
-											<div class="overlay-black clearfix">
-
-												<!-- leftside-content - start -->
-												<div class="leftside-content">
-													<div class="site-logo-wrapper mb-80">
-														<a href="#!" class="logo">
-															<img src="assets/images/2.site-logo.png" alt="logo_not_found">
-														</a>
-													</div>
-													<div class="register-login-link mb-80">
-														<ul>
-															<li class="active"><a href="#!">Login</a></li>
-															<li><a href="#!">Register</a></li>
-														</ul>
-													</div>
-													<div class="copyright-text">
-														<p class="m-0">©2018 <a href="#!" class="yellow-color">Harmoni.com</a> all right reserved, made with <i class="fas fa-heart"></i> by jThemes Studio </p>
-													</div>
-												</div>
-												<!-- leftside-content - end -->
-
-												<!-- rightside-content - start -->
-												<div class="rightside-content text-center">
-
-													<div class="mb-30">
-														<h2 class="form-title title-large white-color">Account <strong>Login</strong></h2>
-														<span class="form-subtitle white-color">Login to our website, or <strong>REGISTER</strong></span>
-													</div>
-
-													<div class="fb-login-btn mb-30">
-														<a href="#!">
-															<span class="icon">
-																<i class="fab fa-facebook-f"></i>
-															</span>
-															login with facebook
-														</a>
-													</div>
-
-													<div class="or-text mb-30">
-														<span>or sign in</span>
-													</div>
-
-													<div class="login-form text-center mb-50">
-														<form action="#!">
-															<div class="form-item">
-																<input type="email" placeholder="example@gmail.com">
-															</div>
-															<div class="form-item">
-																<input type="password" placeholder="Password">
-															</div>
-															<button type="submit" class="login-btn">login now</button>
-														</form>
-													</div>
-
-													<div class="bottom-text white-color">
-														<p class="m-0">
-															* Denotes mandatory field.
-														</p>
-														<p class="m-0">** At least one telephone number is required.</p>
-													</div>
-
-												</div>
-												<!-- rightside-content - end -->
-
-												<a class="popup-modal-dismiss" href="#!">
-													<i class="fas fa-times"></i>
-												</a>
-
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<!-- register-login-group - end -->
-						
-					</div>
-				</div>
-			</div>
-			<!-- header-top - end -->
-
 			<!-- header-bottom - start -->
 			<div class="header-bottom">
 				<div class="container">
@@ -268,8 +74,8 @@
 						<!-- site-logo-wrapper - start -->
 						<div class="col-lg-3">
 							<div class="site-logo-wrapper">
-								<a href="index-1.html" class="logo">
-									<img src="assets/images/0.site-logo.png" alt="logo_not_found">
+								<a href="{{ url('/') }}" class="logo">
+									<img src="assets/images/LOGO-01.png" alt="logo_not_found">
 								</a>
 							</div>
 						</div>
@@ -282,148 +88,24 @@
 
 									<!-- menu-item-list - start -->
 									<div class="col-lg-10">
-										<div class="menu-item-list ul-li clearfix">
+										<div class="menu-item-list ul-li clearfix mt-2">
 											<ul>
 												<li class="menu-item-has-children">
-													<a href="#!">home</a>
-													<ul class="sub-menu">
-														<li class="menu-item-has-children">
-															<a href='index-1.html'>home v.1</a>
-															<ul class="sub-menu">
-																<li>
-																	<a href='#'>example v.1.1</a>
-																</li>
-																<li>
-																	<a href='#'>example v.1.2</a>
-																</li>
-																<li>
-																	<a href='#'>example v.1.3</a>
-																</li>
-																<li>
-																	<a href='#'>example v.1.4</a>
-																</li>
-															</ul>
-														</li>
-														<li class="menu-item-has-children">
-															<a href='index-2.html'>home v.2</a>
-															<ul class="sub-menu">
-																<li>
-																	<a href='#'>example v.2.1</a>
-																</li>
-																<li>
-																	<a href='#'>example v.2.2</a>
-																</li>
-																<li>
-																	<a href='#'>example v.2.3</a>
-																</li>
-															</ul>
-														</li>
-														<li class="menu-item-has-children">
-															<a href='index-3.html'>home v.3</a>
-															<ul class="sub-menu">
-																<li>
-																	<a href='#'>example v.3.1</a>
-																</li>
-																<li>
-																	<a href='#'>example v.3.2</a>
-																</li>
-															</ul>
-														</li>
-														<li class="menu-item-has-children">
-															<a href='index-4.html'>home v.4</a>
-															<ul class="sub-menu">
-																<li>
-																	<a href='#'>example v.4.1</a>
-																</li>
-															</ul>
-														</li>
-													</ul>
+													<a href="{{ url('/') }}">home</a>
 												</li>
 												<li class="menu-item-has-children">
-													<a href="#!">about</a>
-													<ul class="sub-menu">
-														<li><a href="about.html">about us</a></li>
-														<li><a href='service.html'>service</a></li>
-														<li><a href='faq.html'>FAQ</a></li>
-													</ul>
+													<a href="{{ url('/about') }}">about</a>
 												</li>
 												<li class="menu-item-has-children">
-													<a href="#!">events</a>
-													<ul class="sub-menu">
-														<li class="menu-item-has-children">
-															<a href='event-1.html'>event List</a>
-															<ul class="sub-menu">
-																<li><a href="event-1-without-sidebar.html">list without sidebar</a></li>
-															</ul>
-														</li>
-														<li class="menu-item-has-children">
-															<a href='event-2.html'>event Grid</a>
-															<ul class="sub-menu">
-																<li><a href="event-2-without-sidebar.html">grid without sidebar</a></li>
-															</ul>
-														</li>
-														<li><a href='event-details.html'>event details</a></li>
-														<li><a href='booking.html'>event booking</a></li>
-													</ul>
-												</li>
-												<li class="menu-item-has-children">
-													<a href="#!">blogs</a>
-													<ul class="sub-menu">
-														<li><a href='blog.html'>blog</a></li>
-														<li><a href='blog-details.html'>blog details</a></li>
-													</ul>
-												</li>
-												<li>
-													<a href="gallery.html">gallery</a>
-												</li>
-												<li>
-													<a href="speaker.html">speaker</a>
+													<a href="{{ url('/galeri') }}">gallery</a>
 												</li>
 												<li class="menu-item-has-children active">
-													<a href="#!">contact</a>
-													<ul class="sub-menu">
-														<li><a class="active" href="contact.html">contact us</a></li>
-														<li><a href='404-error.html'>404 Error</a></li>
-													</ul>
+													<a href="{{ url('/contact') }}">contact</a>
 												</li>
 											</ul>
 										</div>
 									</div>
 									<!-- menu-item-list - end -->
-
-									<!-- menu-item-list - start -->
-									<div class="col-lg-2">
-										<div class="user-search-btn-group ul-li clearfix">
-											<ul>
-												<li>
-													<a href="#!">
-														<i class="fas fa-user"></i>
-													</a>
-												</li>
-												<li>
-													<button type="button" class="toggle-overlay search-btn">
-														<i class="fas fa-search"></i>
-													</button>
-													<!-- search-body - start -->
-													<div class="search-body">
-														<div class="search-form">
-															<form action="#">
-																<input class="search-input" type="search" placeholder="Search Here">
-																<div class="outer-close toggle-overlay">
-																	<button type="button" class="search-close">
-																		<i class="fas fa-times"></i>
-																	</button>
-																</div>
-															</form>
-														</div>
-													</div>
-													<!-- search-body - end -->
-												</li>
-											</ul>
-										</div>
-									</div>
-									<!-- menu-item-list - end -->
-
 								</div>
 							</div>
 						</div>
@@ -447,8 +129,8 @@
 		<div class="header-altranative">
 			<div class="container">
 				<div class="logo-area float-left">
-					<a href="index-1.html">
-						<img src="assets/images/1.site-logo.png" alt="logo_not_found">
+					<a href="{{ url('/') }}">
+						<img src="assets/images/LOGO-01.png" alt="logo_not_found">
 					</a>
 				</div>
 
@@ -465,318 +147,42 @@
 					</span>
 
 					<div class="sidebar-header">
-						<a href="#!">
-							<img src="assets/images/2.site-logo.png" alt="logo_not_found">
+						<a href="{{ url('/') }}">
+							<img src="assets/images/LOGO-01.png" alt="logo_not_found">
 						</a>
 					</div>
 
-					<!-- sidebar-form - start -->
-					<div class="sidebar-form">
-						<form action="#">
-							<input id="altmenu-sidebar-search" type="search" placeholder="Search">
-							<label for="altmenu-sidebar-search"><i class="fas fa-search"></i></label>
-						</form>
-					</div>
-					<!-- sidebar-form - end -->
-
 					<!-- main-pages-links - start -->
 					<div class="menu-link-list main-pages-links">
-						<h2 class="menu-title">all home pages</h2>
+						<h2 class="menu-title">Menu</h2>
 						<ul>
 							<li>
-								<a href="index-1.html">
+								<a href="{{ url('/') }}">
 									<span class="icon"><i class="fas fa-home"></i></span>
-									Home V.1
+									Home
 								</a>
 							</li>
 							<li>
-								<a href="index-2.html">
-									<span class="icon"><i class="fas fa-home"></i></span>
-									Home V.2
+								<a href="{{ url('/about') }}">
+									<span class="icon"><i class="fas fa-id-card"></i></span>
+									About
 								</a>
 							</li>
 							<li>
-								<a href="index-3.html">
-									<span class="icon"><i class="fas fa-home"></i></span>
-									Home v.3
+								<a href="{{ url('/galeri') }}">
+									<span class="icon"><i class="fas fa-id-card-alt"></i></span>
+									Gallery
 								</a>
 							</li>
-							<li>
-								<a href="index-4.html">
-									<span class="icon"><i class="fas fa-home"></i></span>
-									Home v.4
+							<li class="active">
+								<a href="{{ url('/contact') }}">
+									<span class="icon"><i class="fas fa-address-book"></i></span>
+									Contact
 								</a>
 							</li>
 						</ul>
 					</div>
 					<!-- main-pages-links - end -->
-
-					<!-- other-pages-links - start -->
-					<div class="menu-link-list other-pages-links">
-						<h2 class="menu-title">all single pages</h2>
-						<ul>
-							<li>
-								<a href="about.html">
-									<span class="icon"><i class="fas fa-home"></i></span>
-									About Us
-								</a>
-							</li>
-							<li>
-								<a href="service.html">
-									<span class="icon"><i class="fas fa-home"></i></span>
-									our Services
-								</a>
-							</li>
-							<li>
-								<a href="event-1.html">
-									<span class="icon"><i class="fas fa-home"></i></span>
-									event list
-								</a>
-							</li>
-							<li>
-								<a href="event-2.html">
-									<span class="icon"><i class="fas fa-home"></i></span>
-									event grid
-								</a>
-							</li>
-							<li>
-								<a href="event-1-without-sidebar.html">
-									<span class="icon"><i class="fas fa-home"></i></span>
-									list without sidebar
-								</a>
-							</li>
-							<li>
-								<a href="event-2-without-sidebar.html">
-									<span class="icon"><i class="fas fa-home"></i></span>
-									grid without sidebar
-								</a>
-							</li>
-							<li>
-								<a href="blog.html">
-									<span class="icon"><i class="fas fa-home"></i></span>
-									Latest blogs
-								</a>
-							</li>
-							<li>
-								<a href="gallery.html">
-									<span class="icon"><i class="fas fa-home"></i></span>
-									our gallery
-								</a>
-							</li>
-							<li>
-								<a href="speaker.html">
-									<span class="icon"><i class="fas fa-home"></i></span>
-									event speakers
-								</a>
-							</li>
-							<li class="active">
-								<a href="contact.html">
-									<span class="icon"><i class="fas fa-home"></i></span>
-									contact us
-								</a>
-							</li>
-						</ul>
-					</div>
-					<!-- other-pages-links - end -->
-
-					<!-- inner-pages-links - start -->
-					<div class="menu-link-list inner-pages-links">
-						<h2 class="menu-title">all inner pages</h2>
-						<ul>
-							<li>
-								<a href="booking.html">
-									<span class="icon"><i class="fas fa-home"></i></span>
-									event booking
-								</a>
-							</li>
-							<li>
-								<a href="event-details.html">
-									<span class="icon"><i class="fas fa-home"></i></span>
-									event details
-								</a>
-							</li>
-							<li>
-								<a href='blog-details.html'>
-									<span class="icon"><i class="fas fa-home"></i></span>
-									blog details
-								</a>
-							</li>
-							<li>
-								<a href="faq.html">
-									<span class="icon"><i class="fas fa-home"></i></span>
-									Frequently Ask Qusetion
-								</a>
-							</li>
-							<li>
-								<a href="404-error.html">
-									<span class="icon"><i class="fas fa-home"></i></span>
-									404 error
-								</a>
-							</li>
-						</ul>
-					</div>
-					<!-- inner-pages-links - end -->
-
-					<!-- login-btn-group - start -->
-					<div class="login-btn-group">
-						<ul>
-
-							<li>
-								<a href="#alt-register-modal" class="register-modal-btn">
-									Register
-								</a>
-								<div id="alt-register-modal" class="reglog-modal-wrapper register-modal mfp-hide clearfix" style="background-image: url(assets/images/login-modal-bg.jpg);">
-									<div class="overlay-black clearfix">
-
-										<!-- leftside-content - start -->
-										<div class="leftside-content">
-											<div class="site-logo-wrapper mb-80">
-												<a href="#!" class="logo">
-													<img src="assets/images/2.site-logo.png" alt="logo_not_found">
-												</a>
-											</div>
-											<div class="register-login-link mb-80">
-												<ul>
-													<li><a href="#!">Login</a></li>
-													<li class="active"><a href="#!">Register</a></li>
-												</ul>
-											</div>
-											<div class="copyright-text">
-												<p class="m-0">©2018 <a href="#!" class="yellow-color">Harmoni.com</a> all right reserved, made with <i class="fas fa-heart"></i> by jThemes Studio </p>
-											</div>
-										</div>
-										<!-- leftside-content - end -->
-
-										<!-- rightside-content - start -->
-										<div class="rightside-content text-center">
-
-											<div class="mb-30">
-												<h2 class="form-title title-large white-color">Account <strong>Register</strong></h2>
-												<span class="form-subtitle white-color">Have an account? <strong>LOGIN NOW</strong></span>
-											</div>
-
-											<div class="login-form text-center mb-50">
-												<form action="#!">
-													<div class="form-item">
-														<input type="email" placeholder="User Name">
-													</div>
-													<div class="form-item">
-														<input type="password" placeholder="Password">
-													</div>
-													<div class="form-item">
-														<input type="email" placeholder="Repeat Password">
-													</div>
-													<div class="form-item">
-														<input type="password" placeholder="Email Address">
-													</div>
-													<div class="human-verification text-left">
-														<input type="checkbox" id="alt-imnotarobot">
-														<label for="alt-imnotarobot">I'm not a robot</label>
-														<span class="verification-image">
-															<img src="assets/images/iamnotrobot.png" alt="Image_not_found">
-														</span>
-													</div>
-													<button type="submit" class="login-btn">login now</button>
-												</form>
-											</div>
-
-											<div class="bottom-text white-color">
-												<p class="m-0">
-													* Denotes mandatory field.
-												</p>
-												<p class="m-0">** At least one telephone number is required.</p>
-											</div>
-
-										</div>
-										<!-- rightside-content - end -->
-
-										<a class="popup-modal-dismiss" href="#!">
-											<i class="fas fa-times"></i>
-										</a>
-
-									</div>
-								</div>
-							</li>
-							<li>
-								<a href="#alt-login-modal" class="login-modal-btn">
-									Login
-								</a>
-								<div id="alt-login-modal" class="reglog-modal-wrapper mfp-hide clearfix" style="background-image: url(assets/images/login-modal-bg.jpg);">
-									<div class="overlay-black clearfix">
-
-										<!-- leftside-content - start -->
-										<div class="leftside-content">
-											<div class="site-logo-wrapper mb-80">
-												<a href="#!" class="logo">
-													<img src="assets/images/2.site-logo.png" alt="logo_not_found">
-												</a>
-											</div>
-											<div class="register-login-link mb-80">
-												<ul>
-													<li class="active"><a href="#!">Login</a></li>
-													<li><a href="#!">Register</a></li>
-												</ul>
-											</div>
-											<div class="copyright-text">
-												<p class="m-0">©2018 <a href="#!" class="yellow-color">Harmoni.com</a> all right reserved, made with <i class="fas fa-heart"></i> by jThemes Studio </p>
-											</div>
-										</div>
-										<!-- leftside-content - end -->
-
-										<!-- rightside-content - start -->
-										<div class="rightside-content text-center">
-
-											<div class="mb-30">
-												<h2 class="form-title title-large white-color">Account <strong>Login</strong></h2>
-												<span class="form-subtitle white-color">Login to our website, or <strong>REGISTER</strong></span>
-											</div>
-
-											<div class="fb-login-btn mb-30">
-												<a href="#!">
-													<span class="icon">
-														<i class="fab fa-facebook-f"></i>
-													</span>
-													login with facebook
-												</a>
-											</div>
-
-											<div class="or-text mb-30">
-												<span>or sign in</span>
-											</div>
-
-											<div class="login-form text-center mb-50">
-												<form action="#!">
-													<div class="form-item">
-														<input type="email" placeholder="example@gmail.com">
-													</div>
-													<div class="form-item">
-														<input type="password" placeholder="Password">
-													</div>
-													<button type="submit" class="login-btn">login now</button>
-												</form>
-											</div>
-
-											<div class="bottom-text white-color">
-												<p class="m-0">
-													* Denotes mandatory field.
-												</p>
-												<p class="m-0">** At least one telephone number is required.</p>
-											</div>
-
-										</div>
-										<!-- rightside-content - end -->
-
-										<a class="popup-modal-dismiss" href="#!">
-											<i class="fas fa-times"></i>
-										</a>
-
-									</div>
-								</div>
-							</li>
-							
-						</ul>
-					</div>
-					<!-- login-btn-group - end -->
 
 					<!-- social-links - start -->
 					<div class="social-links">
@@ -784,31 +190,22 @@
 						<div class="mb-15">
 							<h3 class="contact-info">
 								<i class="fas fa-phone"></i>
-								100-2222-9999
+								<a href="https://wa.widget.web.id/646eed" target="_blank">+62 811-6890-866</a>
 							</h3>
 							<h3 class="contact-info">
 								<i class="fas fa-envelope"></i>
-								info@harmoni.com
+								lingkarankreatifaceh@gmail.com
 							</h3>
 						</div>
 						<ul>
 							<li>
-								<a href="#!"><i class="fab fa-facebook-f"></i></a>
+								<a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
 							</li>
 							<li>
-								<a href="#!"><i class="fab fa-twitter"></i></a>
-							</li>
-							<li>
-								<a href="#!"><i class="fab fa-twitch"></i></a>
-							</li>
-							<li>
-								<a href="#!"><i class="fab fa-google-plus-g"></i></a>
-							</li>
-							<li>
-								<a href="#!"><i class="fab fa-instagram"></i></a>
+								<a href="https://www.instagram.com/lingkarankreatifcc/" target="_blank"><i class="fab fa-instagram"></i></a>
 							</li>
 						</ul>
-						<a href="contact.html" class="contact-btn">contact us</a>
+						<a href="{{ url('/contact') }}" class="contact-btn">contact us</a>
 					</div>
 					<!-- social-links - end -->
 
@@ -827,7 +224,7 @@
 		<!-- breadcrumb-section - start
 		================================================== -->
 		<section id="breadcrumb-section" class="breadcrumb-section clearfix">
-			<div class="jarallax" style="background-image: url(assets/images/breadcrumb/0.breadcrumb-bg.jpg);">
+			<div class="jarallax" style="background-image: url(assets/images/slider/slider01.jpg);">
 				<div class="overlay-black">
 					<div class="container">
 						<div class="row justify-content-center">
@@ -843,7 +240,7 @@
 								<!-- breadcrumb-list - start -->
 								<div class="breadcrumb-list">
 									<ul>
-										<li class="breadcrumb-item"><a href="index-1.html" class="breadcrumb-link">Home</a></li>
+										<li class="breadcrumb-item"><a href="{{ url('/') }}" class="breadcrumb-link">Home</a></li>
 										<li class="breadcrumb-item active" aria-current="page">contact us</li>
 									</ul>
 								</div>
@@ -870,7 +267,7 @@
 				<!-- section-title - start -->
 				<div class="section-title mb-50">
 					<small class="sub-title">contact us</small>
-					<h2 class="big-title">Keep in touch <strong>with harmoni</strong></h2>
+					<h2 class="big-title">Keep in touch <strong>with Lingkaran Kreatif</strong></h2>
 				</div>
 				<!-- section-title - end -->
 
@@ -924,170 +321,69 @@
 
 		<!-- google map - start
 		================================================== -->
-		<section id="map-section" class="map-section clearfix">
-			<div class="address-wrapper">
-
-				<!-- address-info-topbar - start -->
-				<div class="address-info-topbar mb-30 clearfix">
-					<div class="address-info-left">
-						<h3 class="title-text">harmoni event management</h3>
-						<p class="m-0">
-							Apple Store, 112 Prince St New York,
-							NY 10012, United States 80361,
-							United States
-						</p>
-					</div>
-
-					<div class="address-info-right">
-						<ul>
-							<li>
-								<button type="button">
-									<span class="icon"><i class="fas fa-street-view"></i></span>
-									<small>Direction</small>
-								</button>
-							</li>
-							<li>
-								<button type="button">
-									<span class="icon"><i class="fas fa-rss"></i></span>
-									<small>Save</small>
-								</button>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<!-- address-info-topbar - end -->
-
-				<!-- address-info-bottombar - start -->
-				<div class="address-info-bottombar clearfix">
-					<div class="address-info-left">
-						<div class="rating-star">
-							<span class="rating-point">4.5</span>
-							<ul>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star-half"></i></li>
-							</ul>
-						</div>
-						<p class="m-0">105 reviews</p>
-					</div>
-
-					<div class="address-info-right">
-						<button type="button" class="map-larger-btn">
-							view larger map
-						</button>
-					</div>
-				</div>
-				<!-- address-info-bottombar - end -->
-					
-			</div>
+		{{-- <section id="map-section" class="map-section clearfix">
 			<div id="google-map">
-				<div id="googleMaps" class="google-map-container"></div>
+				<div id="googleMaps" class="google-map-container mt-2">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.1655701641157!2d95.32740767368401!3d5.542450833788496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30403742bec1804b%3A0x101f6d81088dea7a!2sBreak%20Time!5e0!3m2!1sid!2sid!4v1704810630066!5m2!1sid!2sid" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
 			</div>
-		</section>
+		</section> --}}
 		<!-- google map - end
 		================================================== -->
 
-
-
-
-
 		<!-- default-footer-section - start
 		================================================== -->
-		<footer id="footer-section" class="footer-section default-footer-section clearfix">
+		<footer id="footer-section" class="footer-section footer-section2 clearfix">
 
 			<!-- footer-top - start -->
 			<div class="footer-top sec-ptb-100 clearfix">
 				<div class="container">
 					<div class="row">
 
-						<!-- basic-info - start -->
-						<div class="col-lg-12 col-md-12 col-md-12">
-							<div class="basic-info mb-50 clearfix">
-								<div class="row">
-
-									<!-- basic-info-item - start -->
-									<div class="col-lg-4 col-md-6 col-sm-12">
-										<div class="basic-info-item">
-											<span class="icon">
-												<i class="fas fa-map-marker-alt"></i>
-											</span>
-											<div class="info-content">
-												<p>100 highland ave,</p>
-												<h3>california, united state</h3>
-											</div>
-										</div>
-									</div>
-									<!-- basic-info-item - end -->
-
-									<!-- basic-info-item - start -->
-									<div class="col-lg-4 col-md-6 col-sm-12">
-										<div class="basic-info-item">
-											<span class="icon">
-												<i class="fas fa-envelope"></i>
-											</span>
-											<div class="info-content">
-												<p><a href="#!">contact@pantero.com</a></p>
-												<h3><a href="#!">info@harmoni.com</a></h3>
-											</div>
-										</div>
-									</div>
-									<!-- basic-info-item - end -->
-
-									<!-- basic-info-item - start -->
-									<div class="col-lg-4 col-md-6 col-sm-12">
-										<div class="basic-info-item">
-											<span class="icon">
-												<i class="fas fa-phone"></i>
-											</span>
-											<div class="info-content">
-												<p><a href="#!">100 800 1234 5555</a></p>
-												<h3><a href="#!">100 800 1234 5555</a></h3>
-											</div>
-										</div>
-									</div>
-									<!-- basic-info-item - end -->
-									
-								</div>
-							</div>
-						</div>
-						<!-- basic-info - end -->
-
 						<!-- about-wrapper - start -->
-						<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="col-lg-4 col-md-6 col-sm-12">
 							<div class="about-wrapper">
 
 								<!-- site-logo-wrapper - start -->
 								<div class="site-logo-wrapper mb-30">
-									<a href="index-1.html" class="logo">
-										<img src="assets/images/1.site-logo.png" alt="logo_not_found">
+									<a href="#" class="logo">
+										<img src="{{ asset('assets/images/LOGO-01.png') }}" alt="logo_not_found">
 									</a>
 								</div>
 								<!-- site-logo-wrapper - end -->
 
 								<p class="mb-30">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+									{{-- Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna. --}}
 								</p>
+
+								<!-- basic-info - start -->
+								<div class="basic-info ul-li-block mb-50">
+									<ul>
+										<li>
+											<i class="fas fa-map-marker-alt"></i>
+											Jalan Dr H Teuku Mohammad Hasan Desa No.10A, Sukadamai, Lueng Bata, Banda Aceh City, Aceh 23245
+										</li>
+										<li>
+											<i class="fas fa-envelope"></i>
+											<a href="#!">lingkarankreatifaceh@gmail.com</a>
+										</li>
+										<li>
+											<i class="fas fa-phone"></i>
+											<a href="https://wa.widget.web.id/646eed" target="_blank">+62 811-6890-866</a>
+										</li>
+									</ul>
+								</div>
+								<!-- basic-info - end -->
 
 								<!-- social-links - start -->
 								<div class="social-links ul-li">
-									<h3 class="social-title">network</h3>
+									<h3 class="social-title">Sosial Media</h3>
 									<ul>
 										<li>
-											<a href="#!"><i class="fab fa-facebook-f"></i></a>
+											<a href="#!"><i class="fab fa-youtube"></i></a>
 										</li>
 										<li>
-											<a href="#!"><i class="fab fa-twitter"></i></a>
-										</li>
-										<li>
-											<a href="#!"><i class="fab fa-twitch"></i></a>
-										</li>
-										<li>
-											<a href="#!"><i class="fab fa-google-plus-g"></i></a>
-										</li>
-										<li>
-											<a href="#!"><i class="fab fa-instagram"></i></a>
+											<a href="https://www.instagram.com/lingkarankreatifcc/" target="_blank"><i class="fab fa-instagram"></i></a>
 										</li>
 									</ul>
 								</div>
@@ -1098,28 +394,9 @@
 						<!-- about-wrapper - end -->
 
 						<!-- usefullinks-wrapper - start -->
-						<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="col-lg-4 col-md-6 col-sm-12">
 							<div class="usefullinks-wrapper ul-li-block">
-								<h3 class="footer-item-title">
-									useful <strong>links</strong>
-								</h3>
-								<ul>
-									<li><a href="#!">Birthday Party</a></li>
-									<li><a href="#!">Business meeting</a></li>
-									<li><a href="#!">Conference</a></li>
-									<li><a href="#!">Food Event</a></li>
-									<li><a href="#!">Musical Event</a></li>
-									<li><a href="#!">Wedding Party</a></li>
-								</ul>
-								
-							</div>
-						</div>
-						<!-- usefullinks-wrapper - end -->
-
-						<!-- usefullinks-wrapper - start -->
-						<div class="col-lg-3 col-md-6 col-sm-12">
-							<div class="usefullinks-wrapper ul-li-block">
-								<h3 class="footer-item-title">
+								{{-- <h3 class="footer-item-title">
 									useful <strong>links</strong>
 								</h3>
 								<ul>
@@ -1129,38 +406,43 @@
 									<li><a href="#!">Events Schedule</a></li>
 									<li><a href="#!">Sponsors</a></li>
 									<li><a href="#!">Venues</a></li>
-								</ul>
-								
+									<li><a href="#!">Tickets</a></li>
+									<li><a href="#!">Pricing Plans</a></li>
+								</ul> --}}
 							</div>
 						</div>
 						<!-- usefullinks-wrapper - end -->
 
 						<!-- instagram-wrapper - start -->
-						<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="col-lg-4 col-md-6 col-sm-12">
 							<div class="instagram-wrapper ul-li">
 								<h3 class="footer-item-title">
-									harmoni <strong>instagram</strong>
+									Lingkaran Kreatif <strong>instagram</strong>
 								</h3>
 								<ul>
+									{{-- @foreach (Ghost::welcome() as $item)
+									<div class="item @if($loop->first) active @endif" style="background-image: url({{ asset('/fotoslider/' .$item->foto ?? '') }});">
+										<div class="overlay-black">
+											<div class="container">
+												<div class="slider-item-content">
+
+													<span class="medium-text">one stop</span>
+													<h1 class="big-text">Event Planner</h1>
+													<small class="small-text">every event sould be perfect</small>
+												</div>
+											</div>
+										</div>
+									</div>
+									@endforeach --}}
+									@foreach (Ghost::instagram() as $item)
 									<li class="image-wrapper">
-										<img src="assets/images/footer/instagram/img1.png" alt="Image_not_found">
-										<a href="#!"><i class="fab fa-instagram"></i></a>
+										<img src="{{ asset('/fotoinstagram/' .$item->foto ?? '') }}" alt="Image_not_found">
+										<a href="https://www.instagram.com/lingkarankreatifcc/"><i class="fab fa-instagram"></i></a>
 									</li>
-									<li class="image-wrapper">
-										<img src="assets/images/footer/instagram/img2.png" alt="Image_not_found">
-										<a href="#!"><i class="fab fa-instagram"></i></a>
-									</li>
-									<li class="image-wrapper">
-										<img src="assets/images/footer/instagram/img3.png" alt="Image_not_found">
-										<a href="#!"><i class="fab fa-instagram"></i></a>
-									</li>
-									<li class="image-wrapper">
-										<img src="assets/images/footer/instagram/img4.png" alt="Image_not_found">
-										<a href="#!"><i class="fab fa-instagram"></i></a>
-									</li>
+									@endforeach
 								</ul>
 								<h4 class="followus-link">
-									Follow Our Instagram <a href="#!">#Harmoni</a>
+									Follow Our Instagram <a href="https://www.instagram.com/lingkarankreatifcc/" target="_blank">@lingkarankreatifcc</a>
 								</h4>
 							</div>
 						</div>
@@ -1178,13 +460,13 @@
 						<!-- copyright-text - start -->
 						<div class="col-lg-7 col-md-12 col-sm-12">
 							<div class="copyright-text">
-								<p class="m-0">©2018 <a href="#!" class="site-link">Harmoni.com</a> all right reserved, made with <i class="fas fa-heart"></i> by <a href="#!" class="author-link"><strong>jThemes Studio</strong></a></p>
+								<p class="m-0" style="color: rgb(255, 208, 0)">©{{ date('Y') }} <a href="#!" class="site-link">Lingkaran Kreatif</a>
 							</div>
 						</div>
 						<!-- copyright-text - end -->
 
 						<!-- footer-menu - start -->
-						<div class="col-lg-5 col-md-12 col-sm-12">
+						{{-- <div class="col-lg-5 col-md-12 col-sm-12">
 							<div class="footer-menu">
 								<ul>
 									<li><a href="contact.html">Contact us</a></li>
@@ -1193,7 +475,7 @@
 									<li><a href="#!">Privacy policy</a></li>
 								</ul>
 							</div>
-						</div>
+						</div> --}}
 						<!-- footer-menu - end -->
 
 					</div>
@@ -1223,8 +505,8 @@
 		<script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
 
 		<!-- map jquery include -->
-		<script src="{{ asset('assets/js/gmap3.min.js') }}"></script>
-		<script src="http://maps.google.com/maps/api/js?key=AIzaSyC61_QVqt9LAhwFdlQmsNwi5aUJy9B2SyA"></script>
+		{{-- <script src="{{ asset('assets/js/gmap3.min.js') }}"></script> --}}
+		{{-- <script src="http://maps.google.com/maps/api/js?key=AIzaSyC61_QVqt9LAhwFdlQmsNwi5aUJy9B2SyA"></script> --}}
 
 		<!-- calendar jquery include -->
 		<script src="{{ asset('assets/js/atc.min.js') }}"></script>
@@ -1242,7 +524,7 @@
 		<script src="{{ asset('assets/js/jquery.countdown.js') }}"></script>
 
 		<!-- color panal - jqury include -->
-		<script src="{{ asset('assets/js/style-switcher.js') }}"></script>
+		{{-- <script src="{{ asset('assets/js/style-switcher.js') }}"></script> --}}
 
 		<!-- custom jquery include -->
 		<script src="{{ asset('assets/js/custom.js') }}"></script>

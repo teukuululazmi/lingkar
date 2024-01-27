@@ -8,7 +8,7 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 
 		<title>Lingkaran Kreatif - Gallery</title>
-		<link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}">
+		<link rel="shortcut icon" href="{{ asset('assets/images/LOGO_.png') }}">
 
 		<!-- fraimwork - css include -->
 		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css') }}">
@@ -399,13 +399,13 @@
 									Home
 								</a>
 							</li>
-							<li class="active">
+							<li>
 								<a href="{{ url('/about') }}">
 									<span class="icon"><i class="fas fa-id-card"></i></span>
 									About
 								</a>
 							</li>
-							<li>
+							<li class="active">
 								<a href="{{ url('/galeri') }}">
 									<span class="icon"><i class="fas fa-id-card-alt"></i></span>
 									Gallery
@@ -442,7 +442,7 @@
 								<a href="https://www.instagram.com/lingkarankreatifcc/" target="_blank"><i class="fab fa-instagram"></i></a>
 							</li>
 						</ul>
-						<a href="contact.html" class="contact-btn">contact us</a>
+						<a href="{{ url('/contact') }}" class="contact-btn">contact us</a>
 					</div>
 					<!-- social-links - end -->
 
