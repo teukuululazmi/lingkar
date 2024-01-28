@@ -46,6 +46,8 @@ Route::get('/sponsorsDelete/{id}', [App\Http\Controllers\Sponsors\SponsorsContro
 
 //gallery
 Route::get('/gallery', [App\Http\Controllers\Gallery\GalleryController::class, 'index'])->name('gallery')->middleware('auth');
+Route::post('/galleryPost', [App\Http\Controllers\Gallery\GalleryController::class, 'galleryPost'])->name('galleryPost')->middleware('auth');
+Route::get('/galleryDelete/{id}', [App\Http\Controllers\Gallery\GalleryController::class, 'galleryDelete'])->name('galleryDelete')->middleware('auth');
 
 
 //changepassword
