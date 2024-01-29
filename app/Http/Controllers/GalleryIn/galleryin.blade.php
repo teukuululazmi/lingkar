@@ -17,7 +17,7 @@
 	</div>
 @endsection
 @section('content')
-    <div class="container-fluid">
+<div class="container-fluid">
 	<div class="card">
             <div class="card-header header-elements-inline">
                 <h5 class="card-title">Gallery</h5>
@@ -29,31 +29,28 @@
             </div>
         <div class="card-body">
             <div class="success" data-success="{{Session::get('success')}}"></div>
-                    <form action="{{ route('galleryPost') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('galleryinPost') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group row">
-                                    <label class="col-form-label col-lg-2">Foto</label>
+                                    <label class="col-form-label col-lg-2">Cover</label>
 									<div class="col-lg-10">
-										<input type="file" name="foto" class="form-control h-auto">
+										<input type="file" name="cover" class="form-control h-auto">
+									</div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-form-label col-lg-2">Video</label>
+									<div class="col-lg-10">
+										<input type="text" name="video" class="form-control h-auto">
 									</div>
                                 </div>
 								<div class="form-group row">
                                     <label class="col-form-label col-lg-2">Kategori</label>
 									<div class="col-lg-10">
-										<input type="text" name="kategori" value="Foto" class="form-control h-auto">
+										<input type="text" name="kategori" value="Video" class="form-control h-auto">
 									</div>
                                 </div>
-								{{-- <div class="form-group row">
-		                        	<label class="col-form-label col-lg-2">Kategori</label>
-		                        	<div class="col-lg-10">
-			                            <select class="custom-select" name="kategori">
-			                                <option>Foto</option>
-			                                <option>Video</option>
-			                            </select>
-		                            </div>
-		                        </div> --}}
                             </div>
                         </div>
                         
@@ -79,18 +76,19 @@
 			<thead>
 				<tr class="text-center">
 					<th>No</th>
-					<th>Nama File</th>
+					<th>Cover</th>
+					<th>Link</th>
 					<th>Kategori</th>
 					<th class="text-center">Aksi</th>
 				</tr>
 			</thead>
 			<tbody>
-                    @foreach ($gallery as $item)
+                    @foreach ($galleryin as $item)
 					<tr class="text-center">
 						<td>{{ $loop->iteration }}</td>
-						<td>{{ $item->foto }}</td>
-						<td><span class="badge {{$item->kategori != 'Video'? 'badge badge-primary':'badge badge-success'}}">{{ $item->kategori }}</span></td>
-						{{-- <td><img width="200px" src="{{ url('/galleryfoto/'.$item->foto) }}"></td> --}}
+                        <td><img width="200px" src="{{ url('/gallerycover/'.$item->cover) }}"></td>
+						<td><a href="{{ $item->video }}" target="_blank">{{ $item->video }}</a></td>
+						<td><span class="badge {{$item->kategori != 'Foto'? 'badge badge-info':'badge badge-success'}}">{{ $item->kategori }}</span></td>
 						<td class="text-center">
                             <a href="{{ route('galleryDelete', $item->id) }}" class="btn-sm btn-danger delete" data-popup="tooltip" title="Delete"><i class="icon-bin2"></i></a>	
 						</td>

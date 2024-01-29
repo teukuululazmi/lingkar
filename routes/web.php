@@ -44,11 +44,15 @@ Route::get('/sponsors', [App\Http\Controllers\Sponsors\SponsorsController::class
 Route::post('/sponsorsPost', [App\Http\Controllers\Sponsors\SponsorsController::class, 'sponsorsPost'])->name('sponsorsPost')->middleware('auth');
 Route::get('/sponsorsDelete/{id}', [App\Http\Controllers\Sponsors\SponsorsController::class, 'sponsorsDelete'])->name('sponsorsDelete')->middleware('auth');
 
-//gallery
+//galleryfoto
 Route::get('/gallery', [App\Http\Controllers\Gallery\GalleryController::class, 'index'])->name('gallery')->middleware('auth');
 Route::post('/galleryPost', [App\Http\Controllers\Gallery\GalleryController::class, 'galleryPost'])->name('galleryPost')->middleware('auth');
 Route::get('/galleryDelete/{id}', [App\Http\Controllers\Gallery\GalleryController::class, 'galleryDelete'])->name('galleryDelete')->middleware('auth');
 
+//galleryvideo
+Route::get('/galleryin', [App\Http\Controllers\GalleryIn\GalleryInController::class, 'index'])->name('galleryin')->middleware('auth');
+Route::post('/galleryinPost', [App\Http\Controllers\GalleryIn\GalleryInController::class, 'galleryinPost'])->name('galleryinPost')->middleware('auth');
+Route::get('/galleryinDelete/{id}', [App\Http\Controllers\GalleryIn\GalleryInController::class, 'galleryinDelete'])->name('galleryinDelete')->middleware('auth');
 
 //changepassword
 Route::get('/changepassword', [App\Http\Controllers\ChangePassword\ChangePasswordController::class, 'index'])->name('changepassword')->middleware('auth');

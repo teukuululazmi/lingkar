@@ -184,7 +184,15 @@
 							<a href="{{ route('gallery') }}" class="nav-link {{ request()->route()->uri() == 'gallery' ? 'active' : '' }}">
 								<i class="icon-gallery"></i>
 								<span>
-									Gallery
+									Gallery Foto
+								</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="{{ route('galleryin') }}" class="nav-link {{ request()->route()->uri() == 'galleryin' ? 'active' : '' }}">
+								<i class="icon-video-camera"></i>
+								<span>
+									Gallery Video
 								</span>
 							</a>
 						</li>

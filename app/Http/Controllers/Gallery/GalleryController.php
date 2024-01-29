@@ -18,7 +18,8 @@ class GalleryController extends Controller
     public function galleryPost(Request $request)
     {
         $this->validate($request, [
-            'foto' => 'required|file|mimes:mp4,jpg,png,jpeg|max:20500',
+            // 'foto' => 'required|file|mimes:mp4,jpg,png,jpeg|max:20500',
+            'foto' => 'required|file|mimes:jpg,png,jpeg|max:2000',
         ]);
 
         $file = $request->file('foto');
