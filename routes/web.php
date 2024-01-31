@@ -26,6 +26,9 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::post('/contactPost', [App\Http\Controllers\Contact\ContactController::class, 'contactPost'])->name('contactPost');
+
+
 Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');

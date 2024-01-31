@@ -273,36 +273,31 @@
 
 				<!-- contact-form - start -->
 				<div class="contact-form form-wrapper text-center">
-					<form action="contact.php" method="post">
+					<form action="{{ url('contactPost') }}" method="post">
+						@csrf
 						<div class="row">
 
 							<div class="col-lg-6 col-md-6 col-sm-12">
 								<div class="form-item">
-									<input type="text" placeholder="Your Name" required>
+									<input type="text" name="name" placeholder="Your Name" required>
 								</div>
 							</div>
 
 							<div class="col-lg-6 col-md-6 col-sm-12">
 								<div class="form-item">
-									<input type="email" placeholder="Email Address" required>
-								</div>
-							</div>
-
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<div class="form-item">
-									<input type="text" placeholder="Your Country" required>
-								</div>
-							</div>
-
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<div class="form-item">
-									<input type="tel" placeholder="Phone Number" required>
+									<input type="email" name="email" placeholder="Email Address" required>
 								</div>
 							</div>
 
 							<div class="col-lg-12 col-md-12 col-sm-12">
-								<textarea placeholder="Your Message" required></textarea>
-								<button type="submit" class="custom-btn">send mail</button>
+								<div class="form-item">
+									<input type="number" name="hp" placeholder="Phone Number" required>
+								</div>
+							</div>
+
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<textarea name="pesan" placeholder="Your Message" required></textarea>
+								<button type="submit" class="custom-btn">send</button>
 							</div>
 							
 						</div>

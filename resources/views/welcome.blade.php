@@ -876,7 +876,8 @@
 				</button>
 			</div>
 
-			<div class="grid clearfix mb-80" data-isotope="{ &quot;masonry&quot;: { &quot;columnWidth&quot;: 0 } }">
+			{{-- <div class="grid clearfix mb-80" data-isotope="{ &quot;masonry&quot;: { &quot;columnWidth&quot;: 0 } }"> --}}
+			<div class="grid zoom-gallery clearfix mb-80" data-isotope="{ &quot;masonry&quot;: { &quot;columnWidth&quot;: 0 } }">
 				@foreach (Ghost::gallery1() as $item)
 				<div class="grid-item grid-item--height2 photo-gallery " data-category="photo-gallery">
 					<a class="popup-link" href="{{ asset('/galleryfoto/' .$item->foto ?? '') }}">
