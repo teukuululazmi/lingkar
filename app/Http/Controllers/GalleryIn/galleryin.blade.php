@@ -90,7 +90,7 @@
 						<td><a href="{{ $item->video }}" target="_blank">{{ $item->video }}</a></td>
 						<td><span class="badge {{$item->kategori != 'Foto'? 'badge badge-info':'badge badge-success'}}">{{ $item->kategori }}</span></td>
 						<td class="text-center">
-                            <a href="{{ route('galleryDelete', $item->id) }}" class="btn-sm btn-danger delete" data-popup="tooltip" title="Delete"><i class="icon-bin2"></i></a>	
+                            <a href="{{ route('galleryinDelete', $item->id) }}" class="btn-sm btn-danger delete" data-popup="tooltip" title="Delete"><i class="icon-bin2"></i></a>	
 						</td>
 					</tr>
                     @endforeach

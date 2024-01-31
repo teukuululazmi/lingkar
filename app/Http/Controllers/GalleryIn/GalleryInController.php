@@ -5,6 +5,7 @@ namespace App\Http\Controllers\GalleryIn;
 use App\Http\Controllers\Controller;
 use App\Models\GalleryIn;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class GalleryInController extends Controller
 {
@@ -32,5 +33,16 @@ class GalleryInController extends Controller
             'kategori' => $request->kategori,
         ]);
         return redirect()->back()->with('success', 'menambahkan');
+    }
+
+    public function galleryinDelete($id)
+    {
+        $galleryin = GalleryIn::where('id', $id)->first();
+        //hapus file di dalam folder
+        File::delete('gallerycover/' . $galleryin->cover);
+        //hapus data di db
+        GalleryIn::find($id)->delete($id);
+
+        return redirect()->back()->with('success', 'dihapuskan');
     }
 }
