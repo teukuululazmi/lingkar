@@ -929,8 +929,17 @@
 			</div>
 		</section> --}}
 		<section id="map-section" class="map-section clearfix">
-			<div id="google-map">
+			{{-- <div id="google-map">
 				<div id="googleMaps" class="google-map-container"></div>
+			</div> --}}
+			<div style="--aspect-ratio: 16/9;">
+				{{-- <iframe
+					src="https://maps.app.goo.gl/9CKpRULwr66D3kVRA"
+					width="1600"
+					height="900"
+					frameborder="0">
+				</iframe> --}}
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3117.9321411273227!2d95.3274077!3d5.5424508!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30403742bec1804b%3A0x101f6d81088dea7a!2sBreak%20Time!5e1!3m2!1sid!2sid!4v1706804192100!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 		</section>
 		<!-- google map - end
@@ -1130,8 +1139,8 @@
 		<script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
 
 		<!-- map jquery include -->
-		<script src="{{ asset('assets/js/gmap3.min.js') }}"></script>
-		<script src="http://maps.google.com/maps/api/js?key=AIzaSyC61_QVqt9LAhwFdlQmsNwi5aUJy9B2SyA"></script>
+		{{-- <script src="{{ asset('assets/js/gmap3.min.js') }}"></script> --}}
+		{{-- <script src="http://maps.google.com/maps/api/js?key=AIzaSyC61_QVqt9LAhwFdlQmsNwi5aUJy9B2SyA"></script> --}}
 
 		<!-- calendar jquery include -->
 		<script src="{{ asset('assets/js/atc.min.js') }}"></script>
